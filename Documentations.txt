@@ -1,0 +1,28 @@
+--[[
+Nemesis Feature List / Explanation = {
+  Smoothing = {
+    X Smoothness = Base / Floor Smoothing,
+    Y Smoothness = Air / Falling / InAir Smoothing,
+    Dynamic Smoothness = Distance / Magnitude Based Auto Smoothing
+  },
+  Interpolate = {
+    Base = Lerping / Easing Pattern ( Tick, Static, Dynamic, Roblox ),
+    Graph = { -- Only Works With Dynamic
+      Start = Amount Of Ticks It Takes To Start Dynamic Easing Pattern,
+      End = Amount Of Ticks It Takes To End Dynamic Easing Pattern,
+      Activate = When Easing Pattern Activates ( After Start ),
+      Rate = Rate Of Restart Strength,
+      Lerp = Lerping Strength ( On A Graph )
+    }
+  },
+  Extrapolate = {
+    X Extrapolation = Offset Off The Current Part,
+    Y Extrapolation = Offset Off The Current Part,
+    Z Extrapolation = Offset Off The Current Part,
+  },
+  ['Silent Aim Dynamic Prediction'] = {
+    Dynamic = First Number Calculates A Tick To Use For Script Generated Prediction
+    Second Number Adds (+) Off The First Number For More Accurate Prediction
+  }
+}
+]]
