@@ -1,0 +1,155 @@
+getgenv().Nemesis = {
+    ['Script'] = {
+        ['Optimization'] = {
+            ['Unlock FPS'] = false,
+            ['Cap'] = 165
+        },
+        MouseArgs = "UpdateMousePos"
+    },
+    ['Aimbot'] = { 
+        ['Settings'] = {
+            ['Enabled'] = true,
+            ['Main'] = {
+                ['Panel'] = {
+                    ['Keybinds'] = {
+                        Key = "Q",
+                        Hold = false,
+                        Mouse = false
+                    },
+                    ['Parts'] = {
+                        Horizontal = "Head",
+                        Vertical = { false, "Head" },
+                        ['Nearest'] = {
+                            Enabled = false,
+                            Method = "Part"
+                        }
+                    },
+                    ['Smoothing'] = {
+                        Enabled = true,
+                        X = 0.0023,
+                        Y = { true, 0.70 },
+                        Dynamic = { false , 10, 1 }
+                    },
+                    ['Interpolate'] = {
+                        ['Base'] = "Roblox",
+                        ['Roblox'] = "Linear",
+                        ['Graph'] = { 
+                            Start = .5,
+                            End = .9,
+                            Activate = .8,
+                            Rate = .1,
+                            Lerp = .1
+                        }
+                    }, 
+                    ['Extrapolate'] = { 
+                        Enabled = false,
+                        X = 6, 
+                        Y = 1,
+                        Z = 1
+                    },
+                    ['Camera Shake'] = {
+                        Enabled = false,
+                        Multiply = 0.1,
+                        X = 6, 
+                        Y = 7, 
+                        Z = 6
+                    },
+                    ['Prediction'] = {
+                        Horizontal = 0.11934,
+                        Vertical = 0.11934,
+                        UseZ = { true, 0.145 }
+                    }
+                }
+            }
+        }
+    },
+    ['Bullet Redirection'] = {
+        ['Keybinding'] = {
+            Enabled = true,
+            Bind = false,
+            Key = "C"
+        },
+        ['Visual'] = {
+            Type = "FOV",
+            Follow = false
+        },
+        ['Prediction'] = {
+            ['Base'] = {
+                Dynamic = { false, 0.003, 0.000315 },
+                X = 0.11,
+                Y = { false, 0.11 }
+            }
+        },
+        ['Nearest'] = {
+            Enabled = false,
+            Method = "Point"
+        },
+        ['Redirect'] = {
+            ['Base'] = {
+                Floor = "HumanoidRootPart",
+                Air = "HumanoidRootPart"
+            }
+        }
+    },
+    ['Checks'] = {
+        Death = true,
+        Visible = true,
+        Picked = true,
+    },
+    ['Renders'] = {
+        ['Circle'] = {
+            Visible = false,
+            Transparency = 0.5,
+            Thickness = 0.7,
+            Filled = true,
+            Color = Color3.fromRGB(113, 106, 128),
+            Radius = 1000
+        },
+        ['Outline'] = {
+            Visible = false,
+            Color = Color3.new(0, 0, 0),
+            Transparency = 0.6,
+            Thickness = 2.8
+        },
+        ['Target'] = {
+            Enabled = false,
+            Color = Color3.fromRGB(255, 255, 1)
+        },
+        ['ESP'] = {
+            Enabled = false,
+            Name = false,
+            Target = false,
+            ['Configuration'] = {
+                ['Name Size'] = 13,
+                ['Name Font'] = Drawing.Fonts.Plex,
+                ['Name Color'] = Color3.fromRGB(0, 0, 0),
+                ['Name Outline'] = true
+            },
+        },
+        ['Indicators'] = {
+            Enabled = false,
+            KeyBind = "T"
+        }
+    },
+    ["Emotes"] = {
+        Enabled = false,
+        ['Animations'] = {
+            ["Greet"] = { [1] = true, [2] = "T" },
+            ["Lay"] = { [1] = true, [2] = "V" } -- add any emote, even ++
+        }
+    },
+    ['Sorting'] = {
+        Enabled = false,
+        KeyBind = "F",
+        Alphabetically = true,
+        Highest_Ammo = false,
+        ['Sorted'] = {
+            Enable = false,
+            List = {
+                [1] = "[Double-Barrel SG]", 
+                [2] = "Revolver"
+            } 
+        }
+    },
+    ['Gun Customization'] = {}    
+}
