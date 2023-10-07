@@ -1,3 +1,4 @@
+-- // docs @ https://raw.githubusercontent.com/splittable/Nemesis/main/Documentations.txt
 getgenv().Nemesis = {
     ['Script'] = {
         ['Optimization'] = {
